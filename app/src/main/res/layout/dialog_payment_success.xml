@@ -38,216 +38,166 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:orientation="vertical">
-
-                            <ImageView
-                                android:layout_width="100dp"
-                                android:layout_height="100dp"
-                                android:layout_gravity="center"
-                                android:layout_marginTop="20dp"
-                                android:src="@drawable/accept" />
-
-
-                        </LinearLayout>
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:padding="@dimen/spacing_large">
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:text="Send Money Successful"
+                            android:layout_marginTop="@dimen/spacing_middle"
+                            android:gravity="center_vertical"
+                            android:text="Thank You!"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/label"
                             android:textStyle="bold" />
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:text="01775377663"
-                            android:textStyle="bold" />
+                            android:layout_marginBottom="@dimen/spacing_middle"
+                            android:gravity="center_vertical"
+                            android:text="Your transaction was successful"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                            android:textColor="@color/grey_40" />
 
                         <View
                             android:layout_width="match_parent"
-                            android:layout_height="2dp"
-                            android:layout_margin="10dp"
-                            android:background="@color/gray">
-
-                        </View>
-
-
+                            android:layout_height="1dp"
+                            android:layout_margin="@dimen/spacing_middle"
+                            android:background="@drawable/line_dash_grey_20" />
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginRight="10dp"
-                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="@dimen/spacing_mlarge"
+                            android:gravity="center_vertical"
                             android:orientation="horizontal"
-                            android:weightSum="2">
+                            android:weightSum="2"
+                            android:padding="@dimen/spacing_middle">
 
                             <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
                                 android:layout_weight="1"
-                                android:orientation="vertical">
-
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
                                 <TextView
+                                    android:text="From"
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="Transaction ID"
-                                    android:textColor="@color/label"
-                                    android:textStyle="bold" />
+                                    android:layout_height="wrap_content" />
+                               <TextView
+                                   android:textColor="@color/label"
+                                    android:text="0493785421693"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
 
+                            </LinearLayout><LinearLayout
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
                                 <TextView
+                                    android:text="To"
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="Amount"
-                                    android:textColor="@color/label"
-                                    android:textStyle="bold" />
-
-                                <TextView
+                                    android:layout_height="wrap_content" />
+                               <TextView
+                                   android:textColor="@color/label"
+                                    android:text="01672708329"
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="Charge"
-                                    android:textColor="@color/label"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="Total"
-                                    android:textColor="@color/label"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="Time"
-                                    android:textColor="@color/label"
-                                    android:textStyle="bold" />
+                                    android:layout_height="wrap_content" />
 
                             </LinearLayout>
 
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:orientation="vertical">
 
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:gravity="end"
-                                    android:text="70BJGDNKD"
-                                    android:textAlignment="textEnd"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:gravity="end"
-                                    android:text="10.00Tk."
-                                    android:textAlignment="textEnd"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:gravity="end"
-                                    android:text="0.00Tk."
-                                    android:textAlignment="textEnd"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:gravity="end"
-                                    android:text="10.00Tk."
-                                    android:textAlignment="textEnd"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:gravity="end"
-                                    android:text="10 May 2019, 07:15 AM"
-                                    android:textAlignment="textEnd"
-                                    android:textStyle="bold" />
-
-                            </LinearLayout>
                         </LinearLayout>
-
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="2dp"
-                            android:layout_margin="10dp"
-                            android:background="@color/gray">
-
-                        </View>
-
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/spacing_mlarge"
+                            android:gravity="center_vertical"
                             android:orientation="horizontal"
-                            android:weightSum="2">
+                            android:weightSum="2"
+                            android:padding="@dimen/spacing_middle">
 
                             <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center_horizontal"
+                                android:orientation="vertical"
                                 android:layout_weight="1"
-                                android:gravity="center_horizontal"
-                                android:weightSum="2">
-
-                                <ImageView
-                                    android:layout_width="40dp"
-                                    android:layout_height="20dp"
-                                    android:src="@drawable/call"
-                                    android:tint="@color/label" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Call"
-                                    android:textColor="@color/label" />
-                            </LinearLayout>
-
-                            <LinearLayout
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center_horizontal"
-                                android:layout_weight="1"
-                                android:gravity="center_horizontal"
-                                android:weightSum="2">
-
-                                <ImageView
-                                    android:layout_width="40dp"
-                                    android:layout_height="20dp"
-                                    android:src="@drawable/message"
-                                    android:tint="@color/label" />
-
+                                android:layout_height="wrap_content">
                                 <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Message"
-                                    android:textColor="@color/label" />
-                            </LinearLayout>
+                                    android:text="Date"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+                                <TextView
+                                    android:textColor="@color/label"
+                                    android:text="20, June 2017"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout><LinearLayout
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="Amount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:textColor="@color/label"
+                                android:text="100.00Tk"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
 
                         </LinearLayout>
 
-                        <View
+
+                        </LinearLayout>
+
+
+
+
+
+
+
+                        <android.support.v7.widget.CardView
                             android:layout_width="match_parent"
-                            android:layout_height="2dp"
-                            android:layout_margin="10dp"
-                            android:background="@color/gray">
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/spacing_mlarge"
+                            app:cardBackgroundColor="@color/grey_5"
+                            app:cardCornerRadius="6dp"
+                            app:cardElevation="0dp">
 
-                        </View>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
 
+                                android:orientation="horizontal"
+                                android:paddingBottom="@dimen/spacing_large"
+                                android:paddingLeft="@dimen/spacing_middle"
+                                android:paddingRight="@dimen/spacing_middle"
+                                android:paddingTop="@dimen/spacing_large">
+
+
+
+
+
+
+
+                                    <TextView
+                                         android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="Completed"
+                                         android:textColor="@color/grey_80"
+                                        android:textStyle="bold" />
+
+
+
+
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
 
                     </LinearLayout>
 
