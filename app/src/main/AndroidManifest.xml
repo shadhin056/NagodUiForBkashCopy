@@ -9,15 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Alert"></activity>
-        <activity android:name=".SuccessActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".success"></activity>
+        <activity android:name=".Confirmation"></activity>
+        <activity android:name=".Balance" />
+        <activity android:name=".UtilityBills">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Alert" />
+        <activity android:name=".SuccessActivity" />
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

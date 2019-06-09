@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="1dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/desco" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:text="Bill Payment"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/label"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Source Account"
+                    android:textColor="@color/label" />
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/sp_source_account"
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/label"
+                    android:theme="@style/ThemeSpinner" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+                    android:textColor="@color/label"
+                    android:textColorHint="@color/label"
+                    android:theme="@style/MyTextInputLayout">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:hint="Enter Bill Account Number"
+                        android:inputType="text"
+
+                        android:textSize="16sp"
+                        app:backgroundTint="@color/label" />
+
+
+                </android.support.design.widget.TextInputLayout>
+
+                <ImageView
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="4"
+                    android:background="@color/white"
+                    android:src="@drawable/arrow"
+
+                    android:textAllCaps="false"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

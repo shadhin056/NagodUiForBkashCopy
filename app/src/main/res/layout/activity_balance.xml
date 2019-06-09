@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Balance">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.github.loadingview.LoadingView
+            android:visibility="gone"
+            android:id="@+id/loading_view"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="center"
+            app:lv_duration="12"
+            app:lv_end_color="@color/color_end"
+            app:lv_external_radius="24dp"
+            app:lv_internal_radius="4dp"
+            app:lv_start_color="@color/color_start" />
+        <TextView
+            android:id="@+id/checkBalance"
+            android:layout_width="200dp"
+            android:layout_height="72dp"
+            android:gravity="center_vertical"
+            android:text="Check balance"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            />
+    </LinearLayout>
+
+</LinearLayout>

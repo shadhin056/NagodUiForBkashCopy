@@ -17,5 +17,17 @@
         <item name="colorControlNormal">@color/label</item>
         <item name="colorControlActivated">@color/label</item>
     </style>
+    <style name="MyTextInputLayout" parent="TextAppearance.AppCompat">
+        <item name="colorAccent">@color/label</item>
+    </style>
 
+    <style name="tr" parent="TextAppearance.AppCompat">
+        <item name="android:background">@color/label</item>
+    </style>
+    <style name="ThemeSpinner">
+        <!-- Color when pressed -->
+        <item name="colorAccent">@color/label</item>
+        <!-- Default color for the dropdown arrow and line -->
+        <item name="colorControlNormal">@color/label</item>
+    </style>
 </resources>
