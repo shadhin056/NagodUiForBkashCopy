@@ -12,13 +12,17 @@ import android.widget.Spinner;
 
 public class DPDCActivity extends AppCompatActivity {
     Spinner sp_source_account;
+    Spinner sp_source_account2;
     Button btnSubmit;
     LinearLayout llnext;
     ImageView ivnext;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dpdc);  sp_source_account = findViewById(R.id.sp_source_account);
+        setContentView(R.layout.activity_dpdc);
+        sp_source_account = findViewById(R.id.sp_source_account);
+       sp_source_account2 = findViewById(R.id.sp_source_account2);
         btnSubmit = findViewById(R.id.btnSubmit);
         ivnext = findViewById(R.id.ivnext);
         llnext = findViewById(R.id.llnext);
@@ -31,6 +35,7 @@ public class DPDCActivity extends AppCompatActivity {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
 // Apply the adapter to the spinner
         sp_source_account.setAdapter(adapter);
+        sp_source_account2.setAdapter(adapter);
         btnSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
