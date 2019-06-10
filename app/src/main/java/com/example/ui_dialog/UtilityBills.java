@@ -11,7 +11,7 @@ import android.widget.Spinner;
 
 public class UtilityBills extends AppCompatActivity {
     Spinner sp_source_account;
-    ImageView btnSubmit;
+    Button btnSubmit;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,17 +19,17 @@ public class UtilityBills extends AppCompatActivity {
         sp_source_account = findViewById(R.id.sp_source_account);
         btnSubmit = findViewById(R.id.btnSubmit);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(UtilityBills.this,
-                R.array.country, R.layout.spinner_item);
+                R.array.country, android.R.layout.simple_spinner_item);
 
 // Specify the layout to use when the list of choices appears
-        adapter.setDropDownViewResource(R.layout.spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
 // Apply the adapter to the spinner
         sp_source_account.setAdapter(adapter);
         btnSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String action;
-                Intent intent=new Intent(UtilityBills.this,Confirmation.class);
+                Intent intent=new Intent(UtilityBills.this,SuccessActivity.class);
                 startActivity(intent);
             }
         });

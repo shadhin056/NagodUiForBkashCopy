@@ -68,7 +68,7 @@
                     android:layout_marginLeft="4dp"
                     android:layout_marginTop="10dp"
                     android:text="Source Account"
-                    android:textColor="@color/label" />
+                    android:textColor="@color/colorPrimary" />
 
                 <android.support.v7.widget.AppCompatSpinner
                     android:id="@+id/sp_source_account"
@@ -76,9 +76,17 @@
                     android:layout_width="match_parent"
                     android:layout_height="70dp"
                     android:layout_marginBottom="10dp"
-                    android:backgroundTint="@color/label"
-                    android:theme="@style/ThemeSpinner" />
 
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="2"
+                    android:text="Enter Bill Account Number"
+                    android:textColor="@color/colorPrimary" />
 
             </LinearLayout>
 
@@ -89,33 +97,23 @@
                 android:layout_marginRight="5dp"
                 android:background="@color/white"
                 android:orientation="horizontal"
+                android:paddingBottom="5dp"
                 android:weightSum="5">
 
 
-                <android.support.design.widget.TextInputLayout
+                <EditText
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="14dp"
                     android:layout_weight="1"
-                    android:textColor="@color/label"
-                    android:textColorHint="@color/label"
-                    android:theme="@style/MyTextInputLayout">
+                    android:background="@color/white"
+                    android:inputType="text"
 
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:editable="false"
-                        android:hint="Enter Bill Account Number"
-                        android:inputType="text"
+                    android:textSize="16sp" />
 
-                        android:textSize="16sp"
-                        app:backgroundTint="@color/label" />
-
-
-                </android.support.design.widget.TextInputLayout>
 
                 <ImageView
-                    android:id="@+id/btnSubmit"
+
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_weight="4"
@@ -126,6 +124,346 @@
                     android:textColor="@color/black" />
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="5dp"
+
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="4dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Customer Name"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="MD ShadhiN"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="4dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Customer A/C"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="01672073852"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="5dp"
+
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="4dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Metro No"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="1234"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="4dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Month bill"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="01672"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="5dp"
+
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="4dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Due Date "
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="31/12/1993"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="4dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Amount + VAT"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="200.00 Tk"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="5dp"
+
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="4dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Total amount"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="1234.00 Tk"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="4dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Month bill"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="01672 Tk"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="5dp"
+
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="4dp"
+                    android:weightSum="2">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:theme="@style/MyTextInputLayout">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+
+                            android:editable="false"
+                            android:hint="Password"
+                            android:inputType="text"
+                            android:textColorHint="@color/black"
+
+                            android:textSize="16sp" />
+
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="4dp"
+                    android:weightSum="2">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:theme="@style/MyTextInputLayout">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+
+                            android:editable="false"
+                            android:hint="OTP"
+                            android:inputType="text"
+
+                            android:textColorHint="@color/black"
+                            android:textSize="16sp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="50dp"
+
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/btn_rounded_green_300"
+                android:text="Confirm"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white" />
         </LinearLayout>
 
     </ScrollView>

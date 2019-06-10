@@ -18,7 +18,7 @@
         <item name="colorControlActivated">@color/label</item>
     </style>
     <style name="MyTextInputLayout" parent="TextAppearance.AppCompat">
-        <item name="colorAccent">@color/label</item>
+        <item name="colorAccent">@color/colorPrimary</item>
     </style>
 
     <style name="tr" parent="TextAppearance.AppCompat">
