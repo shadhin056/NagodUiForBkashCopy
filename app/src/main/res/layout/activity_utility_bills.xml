@@ -131,7 +131,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:visibility="gone">
+                android:visibility="visible">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -145,6 +145,7 @@
                     android:weightSum="2">
 
                     <LinearLayout
+
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -153,6 +154,7 @@
                         android:weightSum="2">
 
                         <TextView
+                             android:textAlignment="center"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -160,6 +162,7 @@
                             android:textColor="@color/colorPrimary" />
 
                         <TextView
+                            android:textAlignment="center"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -178,6 +181,7 @@
                         android:weightSum="2">
 
                         <TextView
+                            android:textAlignment="center"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -189,6 +193,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingTop="5dp"
+                            android:textAlignment="center"
                             android:paddingBottom="5dp"
                             android:text="01672073852"
                             android:textColor="@color/black" />
@@ -220,14 +225,14 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Metro No"
+                            android:text="Metro No"  android:textAlignment="center"
                             android:textColor="@color/colorPrimary" />
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:paddingTop="5dp"
+                            android:paddingTop="5dp"  android:textAlignment="center"
                             android:paddingBottom="5dp"
                             android:text="1234"
                             android:textColor="@color/black" />
@@ -245,7 +250,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Month bill"
+                            android:text="Month bill"  android:textAlignment="center"
                             android:textColor="@color/colorPrimary" />
 
                         <TextView
@@ -253,7 +258,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingTop="5dp"
-                            android:paddingBottom="5dp"
+                            android:paddingBottom="5dp"  android:textAlignment="center"
                             android:text="01672"
                             android:textColor="@color/black" />
                     </LinearLayout>
@@ -284,14 +289,14 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Due Date "
+                            android:text="Due Date "  android:textAlignment="center"
                             android:textColor="@color/colorPrimary" />
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:paddingTop="5dp"
+                            android:paddingTop="5dp"  android:textAlignment="center"
                             android:paddingBottom="5dp"
                             android:text="31/12/1993"
                             android:textColor="@color/black" />
@@ -309,14 +314,14 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Amount + VAT"
+                            android:text="Amount + VAT"  android:textAlignment="center"
                             android:textColor="@color/colorPrimary" />
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:paddingTop="5dp"
+                            android:paddingTop="5dp"  android:textAlignment="center"
                             android:paddingBottom="5dp"
                             android:text="200.00 Tk"
                             android:textColor="@color/black" />
@@ -348,7 +353,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Total amount"
+                            android:text="Total amount"  android:textAlignment="center"
                             android:textColor="@color/colorPrimary" />
 
                         <TextView
@@ -356,7 +361,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingTop="5dp"
-                            android:paddingBottom="5dp"
+                            android:paddingBottom="5dp"  android:textAlignment="center"
                             android:text="1234.00 Tk"
                             android:textColor="@color/black" />
                     </LinearLayout>
@@ -373,13 +378,13 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Month bill"
+                            android:text="Month bill"  android:textAlignment="center"
                             android:textColor="@color/colorPrimary" />
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:layout_weight="1"  android:textAlignment="center"
                             android:paddingTop="5dp"
                             android:paddingBottom="5dp"
                             android:text="01672 Tk"
@@ -430,20 +435,44 @@
                     </LinearLayout>
 
 
+                </LinearLayout><LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="5dp"
+                  android:layout_marginBottom="20dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+
+                        android:orientation="vertical"
+                        android:padding="4dp"
+                        android:weightSum="2">
+                        <Button
+                            android:id="@+id/btnSubmit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+
+                            android:layout_marginRight="50dp"
+                            android:background="@drawable/btn_rounded_green_300"
+                            android:text="Confirm"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+
+
                 </LinearLayout>
 
-                <Button
-                    android:id="@+id/btnSubmit"
-                    android:layout_width="match_parent"
-                    android:layout_height="55dp"
-                    android:layout_marginLeft="50dp"
 
-                    android:layout_marginRight="50dp"
-                    android:layout_marginBottom="50dp"
-                    android:background="@drawable/btn_rounded_green_300"
-                    android:text="Confirm"
-                    android:textAllCaps="false"
-                    android:textColor="@android:color/white" />
             </LinearLayout>
         </LinearLayout>
 
