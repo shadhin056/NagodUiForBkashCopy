@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".IndexActivity">
+
+    <Button
+        android:id="@+id/btnAlert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alert" />
+
+
+    <Button
+        android:id="@+id/btnBalance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Balance" />
+
+    <Button
+        android:id="@+id/btnCOnfirmation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="COnfirmation" />
+
+
+
+    <Button
+        android:id="@+id/DPDC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DPDC" />
+
+    <Button
+        android:id="@+id/Main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Main" />
+
+    <Button
+        android:id="@+id/Success"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Success" />
+
+    <Button
+        android:id="@+id/Success2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Success2" />
+    <Button
+        android:id="@+id/Utility"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UTILITY DESCO" />
+    <Button
+        android:id="@+id/WASA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WASA" />
+
+</LinearLayout>
