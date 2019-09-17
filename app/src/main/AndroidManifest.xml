@@ -9,6 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".DashboardActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+            ></activity>
         <activity android:name=".IndexActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,14 +19,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DPDCActivity">
-
-        </activity>
-        <activity android:name=".WASAActivity"></activity>
+        <activity android:name=".DPDCActivity"></activity>
+        <activity android:name=".WASAActivity" />
         <activity android:name=".success" />
         <activity android:name=".Confirmation" />
         <activity android:name=".Balance" />
-        <activity android:name=".UtilityBills"></activity>
+        <activity android:name=".UtilityBills" />
         <activity android:name=".Alert" />
         <activity android:name=".SuccessActivity" />
         <activity android:name=".MainActivity" />

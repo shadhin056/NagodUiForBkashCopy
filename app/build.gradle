@@ -30,4 +30,5 @@ dependencies {
     implementation 'com.android.support:design:28.0.0'
     implementation 'com.github.dmytrodanylyk:android-morphing-button:98a4986e56'
     implementation 'com.samigehi:loadingview:1.1'
+    implementation 'com.github.razir.progressbutton:progressbutton:1.0.3'
 }

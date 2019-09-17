@@ -17,6 +17,7 @@ public class IndexActivity extends AppCompatActivity {
     Button Success2;
     Button Utility;
     Button WASA;
+    Button Dashboard;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +33,7 @@ public class IndexActivity extends AppCompatActivity {
         Success2 = findViewById(R.id.Success2);
         Utility = findViewById(R.id.Utility);
         WASA = findViewById(R.id.WASA);
+        Dashboard = findViewById(R.id.Dashboard);
 
 
         btnAlert.setOnClickListener(new View.OnClickListener() {
@@ -104,6 +106,13 @@ public class IndexActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String action;
                 Intent intent = new Intent(IndexActivity.this, WASAActivity.class);
+                startActivity(intent);
+            }
+        }); Dashboard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String action;
+                Intent intent = new Intent(IndexActivity.this, DashboardActivity.class);
                 startActivity(intent);
             }
         });
