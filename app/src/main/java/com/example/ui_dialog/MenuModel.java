@@ -4,12 +4,12 @@ package com.example.ui_dialog;
  * Created by Enamul on 3/30/17.
  */
 
-public class WelcomeMenuModel {
+public class MenuModel {
     private String menuName;
     private int imageId;
     private String softcode;
 
-    public WelcomeMenuModel(String menuName, int imageId, String softcode){
+    public MenuModel(String menuName, int imageId, String softcode){
         this.menuName = menuName;
         this.imageId = imageId;
         this.softcode = softcode;

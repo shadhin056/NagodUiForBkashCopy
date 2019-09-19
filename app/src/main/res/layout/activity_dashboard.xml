@@ -92,7 +92,6 @@
                 android:layout_height="wrap_content">
             </TextView>
            <LinearLayout
-               android:background="@drawable/shape"
                android:layout_width="match_parent"
                android:layout_height="wrap_content">
 
@@ -122,25 +121,21 @@
 
     </LinearLayout>
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+
         <LinearLayout
-            android:layout_margin="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <GridView
-
-                android:id="@+id/menuGridView"
+                android:id="@+id/gvMenu"
                 android:layout_width="match_parent"
-                android:layout_height="240dp"
+                android:layout_height="wrap_content"
                 android:columnWidth="110dp"
                 android:gravity="center"
                 android:numColumns="auto_fit" />
 
         </LinearLayout>
 
-    </ScrollView>
+
 
 
 </LinearLayout>

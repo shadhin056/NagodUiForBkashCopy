@@ -3,7 +3,6 @@ package com.example.ui_dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Handler;
-import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -21,8 +20,8 @@ public class DashboardActivity extends AppCompatActivity {
     com.github.loadingview.LoadingView loading_view;
     TextView checkBalance;
     private static int SPLASH_TIME_OUT = 500;
-    GridView menuGridView;
-    ArrayList<WelcomeMenuModel> list= new ArrayList<>();;
+    GridView gvMenu;
+    ArrayList<MenuModel> list= new ArrayList<>();;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +29,7 @@ public class DashboardActivity extends AppCompatActivity {
 
         checkBalance=findViewById(R.id.checkBalance);
         loading_view=findViewById(R.id.loading_view);
-        menuGridView = (GridView) findViewById(R.id.menuGridView) ;
+        gvMenu = (GridView) findViewById(R.id.gvMenu) ;
 
         menuView();
         checkBalance.setOnClickListener(new View.OnClickListener() {
@@ -49,7 +48,7 @@ public class DashboardActivity extends AppCompatActivity {
                     public void run() {
                         loading_view.stop();
                         loading_view.setVisibility(View.GONE);
-                        checkBalance.setText("10tk");
+                        checkBalance.setText("Your Balance is 10tk");
                         // This method will be executed once the timer is over
                         // Start your app main activity
                         // close this activity
@@ -64,15 +63,21 @@ public class DashboardActivity extends AppCompatActivity {
 
     private void menuView() {
         list.clear();
-        list.add(new WelcomeMenuModel("হিসাবের স্থিতি", R.drawable.desco, "ACBAL"));
-        list.add(new WelcomeMenuModel("হিসাবের বিবরণ", R.drawable.dpdc, "ACSTMT"));
-        list.add(new WelcomeMenuModel("ফান্ড ট্রান্সফার", R.drawable.arrow, "FTHOME"));
-        list.add(new WelcomeMenuModel("ফান্ড ট্রান্সফার অনুরোধ", R.drawable.desco, "STINS"));
+        list.add(new MenuModel("A/C Statement", R.drawable.statement, "ACBAL"));
+        list.add(new MenuModel("Fund Transfer", R.drawable.transfer, "ACSTMT"));
+        list.add(new MenuModel("Standing Ins", R.drawable.email, "ACSTMT"));
+        list.add(new MenuModel("Mobile Recharge", R.drawable.mobile, "FTHOME"));
+        list.add(new MenuModel("bKash", R.drawable.bkash, "STINS"));
+        list.add(new MenuModel("Payoneer Payment", R.drawable.payonner, "STINS"));
+        list.add(new MenuModel("Credit Card", R.drawable.credit, "STINS"));
+        list.add(new MenuModel("Bill Pay", R.drawable.bill, "STINS"));
+        list.add(new MenuModel("Stop Cheque", R.drawable.stop, "STINS"));
+        list.add(new MenuModel("Cheque Statue", R.drawable.search, "STINS"));
 
-        UsersAdapter adapter = new UsersAdapter(this, list);
-        menuGridView.setAdapter(adapter);
+        MenuAdapter adapter = new MenuAdapter(this, list);
+        gvMenu.setAdapter(adapter);
 
-        menuGridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        gvMenu.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int pstion, long l) {
                 TextView menu_soft_code = (TextView) view.findViewById(R.id.menu_soft_code);
@@ -80,24 +85,24 @@ public class DashboardActivity extends AppCompatActivity {
 
                 if("ACBAL".equals(menu_soft_code.getText().toString())){
                      Intent intent = new Intent(DashboardActivity.this, DashboardActivity.class);
-                    startActivity(intent);
+                    //startActivity(intent);
 
                 }else if("ACSTMT".equals(menu_soft_code.getText().toString())){
                     Intent intent = new Intent(DashboardActivity.this, DashboardActivity.class);
-                    startActivity(intent);
+                    //startActivity(intent);
                 }else if("FTHOME".equals(menu_soft_code.getText().toString())){
                     Intent intent = new Intent(DashboardActivity.this, DashboardActivity.class);
-                    startActivity(intent);
+                    //startActivity(intent);
                 }else if("STINS".equals(menu_soft_code.getText().toString())){
                     Intent intent = new Intent(DashboardActivity.this, DashboardActivity.class);
-                    startActivity(intent);
+                    //startActivity(intent);
                 }
 
 
             }
         });
     }
-    public class UsersAdapter extends ArrayAdapter<WelcomeMenuModel> {
+    public class MenuAdapter extends ArrayAdapter<MenuModel> {
 
         // View lookup cache
 
@@ -112,9 +117,9 @@ public class DashboardActivity extends AppCompatActivity {
 
 
 
-        public UsersAdapter(Context context, ArrayList<WelcomeMenuModel> welcomeMenuModels) {
+        public MenuAdapter(Context context, ArrayList<MenuModel> welcomeMenuModels) {
 
-            super(context, R.layout.row_grideview_welcome_agent, welcomeMenuModels);
+            super(context, R.layout.row_grideview_menu, welcomeMenuModels);
 
         }
 
@@ -126,17 +131,17 @@ public class DashboardActivity extends AppCompatActivity {
 
             // Get the data item for this position
 
-            WelcomeMenuModel model = getItem(position);
+            MenuModel model = getItem(position);
 
-            UsersAdapter.ViewHolder viewHolder; // view lookup cache stored in tag
+            MenuAdapter.ViewHolder viewHolder; // view lookup cache stored in tag
 
             if (convertView == null) {
 
-                viewHolder = new UsersAdapter.ViewHolder();
+                viewHolder = new MenuAdapter.ViewHolder();
 
                 LayoutInflater inflater = LayoutInflater.from(getContext());
 
-                convertView = inflater.inflate(R.layout.row_grideview_welcome_agent, parent, false);
+                convertView = inflater.inflate(R.layout.row_grideview_menu, parent, false);
 
                 viewHolder.menu_icon = (ImageView) convertView.findViewById(R.id.menu_icon);
                 viewHolder.menu_name = (TextView) convertView.findViewById(R.id.menu_name);
@@ -147,7 +152,7 @@ public class DashboardActivity extends AppCompatActivity {
 
             } else {
 
-                viewHolder = (UsersAdapter.ViewHolder) convertView.getTag();
+                viewHolder = (MenuAdapter.ViewHolder) convertView.getTag();
 
             }
 
