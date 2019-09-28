@@ -18,6 +18,10 @@ public class IndexActivity extends AppCompatActivity {
     Button Utility;
     Button WASA;
     Button Dashboard;
+    Button btnT1;
+    Button btnT2;
+    Button btnT3;
+    Button btnT4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +38,10 @@ public class IndexActivity extends AppCompatActivity {
         Utility = findViewById(R.id.Utility);
         WASA = findViewById(R.id.WASA);
         Dashboard = findViewById(R.id.Dashboard);
+        btnT1 = findViewById(R.id.btnT1);
+        btnT2 = findViewById(R.id.btnT2);
+        btnT3 = findViewById(R.id.btnT3);
+        btnT4 = findViewById(R.id.btnT4);
 
 
         btnAlert.setOnClickListener(new View.OnClickListener() {
@@ -113,6 +121,34 @@ public class IndexActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String action;
                 Intent intent = new Intent(IndexActivity.this, DashboardActivity.class);
+                startActivity(intent);
+            }
+        }); btnT1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String action;
+                Intent intent = new Intent(IndexActivity.this, T1Activity.class);
+                startActivity(intent);
+            }
+        }); btnT2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String action;
+                Intent intent = new Intent(IndexActivity.this, T2Activity.class);
+                startActivity(intent);
+            }
+        }); btnT3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String action;
+                Intent intent = new Intent(IndexActivity.this, T3Activity.class);
+                startActivity(intent);
+            }
+        });btnT4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String action;
+                Intent intent = new Intent(IndexActivity.this, T4Activity.class);
                 startActivity(intent);
             }
         });

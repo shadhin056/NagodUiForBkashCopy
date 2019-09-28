@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#1f62af</color>
-    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorPrimary">#00B531</color>
+    <color name="colorPrimary1">#3A7FC2</color>
+    <color name="colorPrimaryDark">#008577</color>
+    <color name="black">#000A08</color>
     <color name="colorAccent">#D81B60</color>
-    <color name="black">#030000</color>
+    <color name="colorPrimaryLight">#1E88E5</color>
+    <color name="btn_steps_text_color">#FFFFFF</color>
+
+    <color name="btn_submit_text_color">#FFFFFF</color>
+    <color name="textColor">#337ab7</color>
+    <color name="label_color">@color/colorPrimary</color>
+    <color name="highlited_color">@android:color/holo_red_dark</color>
+
     <color name="label">#1f62af</color>
     <color name="gray">#1285858B</color>
     <color name="white">#ffffff</color>
