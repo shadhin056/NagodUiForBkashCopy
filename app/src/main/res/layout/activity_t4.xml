@@ -1,9 +1,411 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".T4Activity">
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="#EFF0F4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:background="@drawable/blue_border_rounded_cornwe1"
+                android:gravity="center_horizontal"
+                android:padding="2dp">
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_image"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/avater"
+                        app:civ_border_color="@color/mb_blue_dark"
+                        app:civ_border_width="2dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+
+                    <LinearLayout
+                        android:padding="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <Button
+                                 android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentRight="true"
+                                 android:layout_marginRight="10dp"
+                                android:background="@drawable/user5" />
+                            <TextView
+                                android:textAllCaps="true"
+                                android:textColor="@color/mb_blue_dark"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="Name"
+                                >
+
+                            </TextView>
+
+                            <TextView
+
+                                android:textAlignment="textEnd"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="MD.Moniruzzaman khondaker"
+                                android:textColor="@color/black"
+                                android:gravity="end">
+
+                            </TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <Button
+
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/school" />
+
+                            <TextView
+                                android:textAllCaps="true"
+                                android:textColor="@color/mb_blue_dark"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="Institute"
+                                >
+
+                            </TextView>
+
+                            <TextView
+
+                                android:textAlignment="textEnd"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="East West University"
+                                android:textColor="@color/black"
+                                android:gravity="end">
+
+                            </TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <Button
+
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/money9" />
+
+                            <TextView
+                                android:textAllCaps="true"
+                                android:textColor="@color/mb_blue_dark"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="Amount"
+                                >
+
+                            </TextView>
+
+                            <TextView
+
+                                android:textAlignment="textEnd"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="100.00tk"
+                                android:textColor="@color/black"
+                                android:gravity="end">
+
+                            </TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <Button
+
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/focus" />
+
+                            <TextView
+                                android:textAllCaps="true"
+                                android:textColor="@color/mb_blue_dark"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="Purpose"
+                                >
+
+                            </TextView>
+
+                            <TextView
+
+                                android:textAlignment="textEnd"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Buy books"
+                                android:textColor="@color/black"
+                                android:gravity="end">
+
+                            </TextView>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_gravity="right"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:background="@drawable/blue_border_rounded_cornwe"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:text="View"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black">
+
+                            </Button>
+                            <Button
+                                android:layout_marginLeft="5dp"
+                                android:textAllCaps="false"
+                                android:background="@drawable/blue_border_rounded_cornwe"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:text="Donate"
+                                android:textColor="@color/black">
+
+                            </Button>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/left_border"
+                android:gravity="center_vertical"
+                android:padding="10dp">
+
+                <Button
+
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/user5" />
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:textColor="@color/mb_blue_dark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="Student Request" />
+
+                    <TextView
+                        android:padding="5dp"
+                         android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="20"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/next3" />
+            </LinearLayout> <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/left_border"
+                android:gravity="center_vertical"
+                android:padding="10dp">
+
+                <Button
+
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/teacher2" />
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:textColor="@color/mb_blue_dark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="Teacher List" />
+                    <TextView
+                        android:padding="5dp"
+                         android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="20"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/next3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/left_border"
+                android:gravity="center_vertical"
+                android:padding="10dp">
+
+                <Button
+
+                    android:layout_width="30dp"
+                    android:layout_height="23dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/help3" />
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/mb_blue_dark"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="Donars List" />
+
+                    <TextView
+                        android:padding="5dp"
+                         android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="20"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/next3" />
+            </LinearLayout>
+
+
+
+
+            <GridView
+                android:layout_marginRight="1dp"
+                android:layout_marginLeft="1dp"
+                android:id="@+id/gvMenu"
+                android:layout_width="match_parent"
+                android:layout_height="340dp"
+                android:columnWidth="110dp"
+                android:gravity="center"
+                android:numColumns="auto_fit" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
