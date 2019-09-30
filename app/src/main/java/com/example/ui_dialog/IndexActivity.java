@@ -22,6 +22,7 @@ public class IndexActivity extends AppCompatActivity {
     Button btnT2;
     Button btnT3;
     Button btnT4;
+    Button btnT5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +43,7 @@ public class IndexActivity extends AppCompatActivity {
         btnT2 = findViewById(R.id.btnT2);
         btnT3 = findViewById(R.id.btnT3);
         btnT4 = findViewById(R.id.btnT4);
+        btnT5 = findViewById(R.id.btnT5);
 
 
         btnAlert.setOnClickListener(new View.OnClickListener() {
@@ -144,11 +146,23 @@ public class IndexActivity extends AppCompatActivity {
                 Intent intent = new Intent(IndexActivity.this, T3Activity.class);
                 startActivity(intent);
             }
-        });btnT4.setOnClickListener(new View.OnClickListener() {
+        });
+
+
+        btnT4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String action;
                 Intent intent = new Intent(IndexActivity.this, T4Activity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnT5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String action;
+                Intent intent = new Intent(IndexActivity.this, T5Activity.class);
                 startActivity(intent);
             }
         });

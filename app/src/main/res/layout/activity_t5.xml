@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:subtitle="Sub"
+        app:title="AndroidlyToolbar"
+        android:background="#a12643">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Talent funding"
+                android:textColor="@color/white"
+                android:textAllCaps="true"
+                android:textStyle="bold"/>
+
+
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="#EFF0F4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/left_color_5"
+                android:gravity="center_vertical"
+                android:padding="10dp">
+
+                <Button
+
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/persion" />
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textColor="#a12643"
+                        android:text="Student Request"
+                        android:textAllCaps="true"/>
+
+                    <TextView
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="20"
+                        android:textColor="#a12643"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/right_arrow_1"
+
+                   />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:background="@drawable/blue_border_rounded_cornwe1"
+                android:gravity="center_horizontal"
+                android:padding="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+
+                    android:background="@drawable/blue_border_rounded_cornwe1"
+
+                    android:gravity="center_vertical"
+                    android:padding="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_weight="1"
+                                android:id="@+id/profile_image"
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:src="@drawable/persion"
+                                app:civ_border_width="2dp"
+                                app:civ_border_color="@color/grey_20"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+
+                                <TextView
+
+                                    android:textAlignment="textEnd"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="MD.Moniruzzaman khondaker"
+                                    android:textColor="@color/black"
+                                    android:gravity="end">
+
+                                </TextView>
+                            </LinearLayout>
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+
+                                    android:textAlignment="textEnd"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="East West University"
+                                    android:textColor="@color/black"
+                                    android:gravity="end">
+
+                                </TextView>
+                            </LinearLayout>
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+
+                                <TextView
+
+                                    android:textAlignment="textEnd"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="100.00tk"
+                                    android:textColor="@color/black"
+                                    android:gravity="end">
+
+                                </TextView>
+                            </LinearLayout>
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+
+                                    android:textAlignment="textEnd"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Buy books"
+                                    android:textColor="@color/black"
+                                    android:gravity="end">
+
+                                </TextView>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_gravity="right"
+                                android:layout_marginTop="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:background="@drawable/corner_button_5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="30dp"
+                                    android:text="View"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/black">
+
+                                </Button>
+                                <Button
+                                    android:layout_marginLeft="5dp"
+                                    android:textAllCaps="false"
+                                    android:background="@drawable/corner_button_5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="30dp"
+                                    android:text="Donate"
+                                    android:textColor="@color/black">
+
+                                </Button>
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/left_color_5"
+            android:gravity="center_vertical"
+            android:padding="10dp">
+
+            <Button
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/persion" />
+
+            <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:textColor="@color/color_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="Teacher List"
+                    android:textAllCaps="true"/>
+                <TextView
+                    android:padding="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="20"
+                    android:textColor="@color/color_5"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/right_arrow_1" />
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/left_color_5"
+                android:gravity="center_vertical"
+                android:padding="10dp">
+
+                <Button
+
+                    android:layout_width="30dp"
+                    android:layout_height="23dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/doantion_cion_5" />
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/color_5"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="Donars List"
+                        android:textAllCaps="true"/>
+
+                    <TextView
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="20"
+                        android:textColor="@color/color_5"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/right_arrow_1" />
+            </LinearLayout>
+
+
+
+
+            <GridView
+                android:layout_marginRight="1dp"
+                android:layout_marginLeft="1dp"
+                android:id="@+id/gvMenu"
+                android:layout_width="match_parent"
+                android:layout_height="340dp"
+                android:columnWidth="110dp"
+                android:gravity="center"
+                android:numColumns="auto_fit" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

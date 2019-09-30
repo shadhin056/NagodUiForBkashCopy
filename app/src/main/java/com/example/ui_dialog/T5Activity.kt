@@ -10,16 +10,19 @@ import android.view.ViewGroup
 import android.widget.*
 import java.util.ArrayList
 
-class T4Activity : AppCompatActivity() {
+class T5Activity : AppCompatActivity() {
+
     internal lateinit var gvMenu: GridView
     internal var list = ArrayList<MenuModel>();
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_t4)
+        setContentView(R.layout.activity_t5)
+        supportActionBar?.hide();
+
         initID()
         menuView()
     }
-
 
     private fun initID() {
         Log.e("XXX","inside id")
@@ -30,9 +33,9 @@ class T4Activity : AppCompatActivity() {
     private fun menuView() {
         Log.e("XXX","inside menu")
         list.clear()
-        list.add(MenuModel("Ongoing charity", R.drawable.leaf2, "CHARITY"))
-        list.add(MenuModel("Donate BDT 0.0", R.drawable.money2, "DONET"))
-        list.add(MenuModel("Scholarships", R.drawable.education2, "SCHOLARSHIPS"))
+        list.add(MenuModel("ONGOING EVENT", R.drawable.events, "CHARITY"))
+        list.add(MenuModel("DONATE BDT", R.drawable.doantion_cion_5, "DONET"))
+        list.add(MenuModel("SHCOLARSHIP", R.drawable.sholarship_icon1, "SCHOLARSHIPS"))
 
         val adapter = MenuAdapter(this, list)
         gvMenu?.setAdapter(adapter)
