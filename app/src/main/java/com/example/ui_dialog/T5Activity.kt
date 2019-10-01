@@ -9,6 +9,14 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.*
 import java.util.ArrayList
+import android.opengl.ETC1.getHeight
+import android.view.ViewTreeObserver
+import android.support.v4.app.SupportActivity
+import android.support.v4.app.SupportActivity.ExtraData
+import android.support.v4.content.ContextCompat.getSystemService
+import android.icu.lang.UCharacter.GraphemeClusterBreak.T
+
+
 
 class T5Activity : AppCompatActivity() {
 
@@ -27,6 +35,9 @@ class T5Activity : AppCompatActivity() {
     private fun initID() {
         Log.e("XXX","inside id")
         gvMenu = findViewById(R.id.gvMenu) as GridView
+
+
+
     }
 
 
