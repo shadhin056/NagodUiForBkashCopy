@@ -56,7 +56,6 @@
                     android:id="@+id/edtAmount"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/white"
                     android:hint="User ID"
                     android:inputType="number" />
             </android.support.design.widget.TextInputLayout>
@@ -128,10 +127,9 @@
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:text="Terms &amp; Condition ! "
-                >
-
-            </TextView>
+                ></TextView>
             <TextView
+                android:id="@+id/txtAccept"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/terms_privacy_english">
