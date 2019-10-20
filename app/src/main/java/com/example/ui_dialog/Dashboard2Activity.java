@@ -63,17 +63,16 @@ public class Dashboard2Activity extends AppCompatActivity {
 
     private void menuView() {
         list.clear();
-        list.add(new MenuModel("A/C Statement", R.drawable.statement, "ACBAL"));
-        list.add(new MenuModel("Fund Transfer", R.drawable.transfer, "ACSTMT"));
-        list.add(new MenuModel("Standing Ins", R.drawable.email, "ACSTMT"));
-        list.add(new MenuModel("Mobile Recharge", R.drawable.mobile, "FTHOME"));
+        list.add(new MenuModel("A/C Statement", R.drawable.n_accountstatement, "ACBAL"));
+        list.add(new MenuModel("Fund Transfer", R.drawable.n_transfer, "ACSTMT"));
+        list.add(new MenuModel("Standing Ins", R.drawable.n_email, "ACSTMT"));
+        list.add(new MenuModel("Mobile Recharge", R.drawable.n_mobile, "FTHOME"));
         list.add(new MenuModel("bKash", R.drawable.bkash, "STINS"));
         list.add(new MenuModel("Payoneer Payment", R.drawable.payonner, "STINS"));
         list.add(new MenuModel("Credit Card", R.drawable.credit, "STINS"));
-        list.add(new MenuModel("Bill Pay", R.drawable.bill, "STINS"));
+        list.add(new MenuModel("Bill Pay", R.drawable.n_bill, "STINS"));
         list.add(new MenuModel("Stop Cheque", R.drawable.stop, "STINS"));
         list.add(new MenuModel("Cheque Statue", R.drawable.search, "STINS"));
-
         Dashboard2Activity.MenuAdapter adapter = new MenuAdapter(this, list);
         gvMenu.setAdapter(adapter);
 
