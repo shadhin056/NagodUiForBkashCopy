@@ -2,7 +2,6 @@ package com.example.ui_dialog;
 
 import android.content.Context;
 import android.content.Intent;
-import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -16,50 +15,22 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class DashboardActivity extends AppCompatActivity {
+public class Dashboard3Activity extends AppCompatActivity {
     com.github.loadingview.LoadingView loading_view;
     TextView checkBalance;
     private static int SPLASH_TIME_OUT = 500;
     GridView gvMenu;
-    ArrayList<MenuModel> list= new ArrayList<>();;
+    ArrayList<MenuModel> list = new ArrayList<>();
+    ;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dashboard);
+        setContentView(R.layout.activity_dashboard3);
         getSupportActionBar().setElevation(0);
-
-        checkBalance=findViewById(R.id.checkBalance);
-        loading_view=findViewById(R.id.loading_view);
-        gvMenu = (GridView) findViewById(R.id.gvMenu) ;
-
+        gvMenu = (GridView) findViewById(R.id.gvMenu);
         menuView();
-        checkBalance.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                loading_view.start();
-                checkBalance.setText("Loading");
-                new Handler().postDelayed(new Runnable() {
 
-                    /*
-                     * Showing splash screen with a timer. This will be useful when you
-                     * want to show case your app logo / company
-                     */
-
-                    @Override
-                    public void run() {
-                        loading_view.stop();
-                        loading_view.setVisibility(View.GONE);
-                        checkBalance.setText("Your Balance is 10tk");
-                        // This method will be executed once the timer is over
-                        // Start your app main activity
-                        // close this activity
-                        //finish();
-                    }
-                }, SPLASH_TIME_OUT);
-
-
-            }
-        });
     }
 
     private void menuView() {
@@ -75,7 +46,7 @@ public class DashboardActivity extends AppCompatActivity {
         list.add(new MenuModel("Stop Cheque", R.drawable.stop, "STINS"));
         list.add(new MenuModel("Cheque Statue", R.drawable.search, "STINS"));
 
-        MenuAdapter adapter = new MenuAdapter(this, list);
+        Dashboard3Activity.MenuAdapter adapter = new MenuAdapter(this, list);
         gvMenu.setAdapter(adapter);
 
         gvMenu.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -84,18 +55,18 @@ public class DashboardActivity extends AppCompatActivity {
                 TextView menu_soft_code = (TextView) view.findViewById(R.id.menu_soft_code);
                 TextView menu_name = (TextView) view.findViewById(R.id.menu_name);
 
-                if("ACBAL".equals(menu_soft_code.getText().toString())){
-                     Intent intent = new Intent(DashboardActivity.this, DashboardActivity.class);
+                if ("ACBAL".equals(menu_soft_code.getText().toString())) {
+                    Intent intent = new Intent(Dashboard3Activity.this, Dashboard3Activity.class);
                     //startActivity(intent);
 
-                }else if("ACSTMT".equals(menu_soft_code.getText().toString())){
-                    Intent intent = new Intent(DashboardActivity.this, DashboardActivity.class);
+                } else if ("ACSTMT".equals(menu_soft_code.getText().toString())) {
+                    Intent intent = new Intent(Dashboard3Activity.this, Dashboard3Activity.class);
                     //startActivity(intent);
-                }else if("FTHOME".equals(menu_soft_code.getText().toString())){
-                    Intent intent = new Intent(DashboardActivity.this, DashboardActivity.class);
+                } else if ("FTHOME".equals(menu_soft_code.getText().toString())) {
+                    Intent intent = new Intent(Dashboard3Activity.this, Dashboard3Activity.class);
                     //startActivity(intent);
-                }else if("STINS".equals(menu_soft_code.getText().toString())){
-                    Intent intent = new Intent(DashboardActivity.this, DashboardActivity.class);
+                } else if ("STINS".equals(menu_soft_code.getText().toString())) {
+                    Intent intent = new Intent(Dashboard3Activity.this, Dashboard3Activity.class);
                     //startActivity(intent);
                 }
 
@@ -103,27 +74,26 @@ public class DashboardActivity extends AppCompatActivity {
             }
         });
     }
+
     public class MenuAdapter extends ArrayAdapter<MenuModel> {
 
         // View lookup cache
 
-        private  class ViewHolder {
+        private class ViewHolder {
 
             ImageView menu_icon;
             TextView menu_name;
-            TextView menu_soft_code ;
+            TextView menu_soft_code;
 
 
         }
-
 
 
         public MenuAdapter(Context context, ArrayList<MenuModel> welcomeMenuModels) {
 
-            super(context, R.layout.row_grideview_menu, welcomeMenuModels);
+            super(context, R.layout.row_grideview_menu_3, welcomeMenuModels);
 
         }
-
 
 
         @Override
@@ -134,15 +104,15 @@ public class DashboardActivity extends AppCompatActivity {
 
             MenuModel model = getItem(position);
 
-            MenuAdapter.ViewHolder viewHolder; // view lookup cache stored in tag
+            Dashboard3Activity.MenuAdapter.ViewHolder viewHolder; // view lookup cache stored in tag
 
             if (convertView == null) {
 
-                viewHolder = new MenuAdapter.ViewHolder();
+                viewHolder = new Dashboard3Activity.MenuAdapter.ViewHolder();
 
                 LayoutInflater inflater = LayoutInflater.from(getContext());
 
-                convertView = inflater.inflate(R.layout.row_grideview_menu, parent, false);
+                convertView = inflater.inflate(R.layout.row_grideview_menu_3, parent, false);
 
                 viewHolder.menu_icon = (ImageView) convertView.findViewById(R.id.menu_icon);
                 viewHolder.menu_name = (TextView) convertView.findViewById(R.id.menu_name);
@@ -153,7 +123,7 @@ public class DashboardActivity extends AppCompatActivity {
 
             } else {
 
-                viewHolder = (MenuAdapter.ViewHolder) convertView.getTag();
+                viewHolder = (Dashboard3Activity.MenuAdapter.ViewHolder) convertView.getTag();
 
             }
 
@@ -162,11 +132,10 @@ public class DashboardActivity extends AppCompatActivity {
             viewHolder.menu_icon.setImageResource(model.getImageId());
 
 
-                viewHolder.menu_name.setText(model.getMenuName());
+            viewHolder.menu_name.setText(model.getMenuName());
 
 
             viewHolder.menu_soft_code.setText(model.getSoftcode());
-
 
 
             return convertView;
@@ -174,5 +143,4 @@ public class DashboardActivity extends AppCompatActivity {
         }
 
     }
-
 }

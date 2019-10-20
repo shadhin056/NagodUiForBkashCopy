@@ -24,6 +24,8 @@ public class IndexActivity extends AppCompatActivity {
     Button btnT4;
     Button btnT5;
     Button btnReg;
+    Button btnDashboard2;
+    Button btnDashboard3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,12 +48,13 @@ public class IndexActivity extends AppCompatActivity {
         btnT4 = findViewById(R.id.btnT4);
         btnT5 = findViewById(R.id.btnT5);
         btnReg = findViewById(R.id.btnReg);
+        btnDashboard2 = findViewById(R.id.btnDashboard2);
+        btnDashboard3 = findViewById(R.id.btnDashboard3);
 
 
         btnAlert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String action;
                 Intent intent = new Intent(IndexActivity.this, Alert.class);
                 startActivity(intent);
             }
@@ -59,7 +62,6 @@ public class IndexActivity extends AppCompatActivity {
         btnBalance.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String action;
                 Intent intent = new Intent(IndexActivity.this, Balance.class);
                 startActivity(intent);
             }
@@ -67,7 +69,6 @@ public class IndexActivity extends AppCompatActivity {
         btnCOnfirmation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String action;
                 Intent intent = new Intent(IndexActivity.this, Confirmation.class);
                 startActivity(intent);
             }
@@ -76,7 +77,6 @@ public class IndexActivity extends AppCompatActivity {
         DPDC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String action;
                 Intent intent = new Intent(IndexActivity.this, DPDCActivity.class);
                 startActivity(intent);
             }
@@ -84,7 +84,6 @@ public class IndexActivity extends AppCompatActivity {
         Main.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String action;
                 Intent intent = new Intent(IndexActivity.this, MainActivity.class);
                 startActivity(intent);
             }
@@ -92,7 +91,6 @@ public class IndexActivity extends AppCompatActivity {
         Success.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String action;
                 Intent intent = new Intent(IndexActivity.this, success.class);
                 startActivity(intent);
             }
@@ -100,7 +98,6 @@ public class IndexActivity extends AppCompatActivity {
         Success2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String action;
                 Intent intent = new Intent(IndexActivity.this, SuccessActivity.class);
                 startActivity(intent);
             }
@@ -108,7 +105,6 @@ public class IndexActivity extends AppCompatActivity {
         Utility.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String action;
                 Intent intent = new Intent(IndexActivity.this, UtilityBills.class);
                 startActivity(intent);
             }
@@ -116,35 +112,30 @@ public class IndexActivity extends AppCompatActivity {
         WASA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String action;
                 Intent intent = new Intent(IndexActivity.this, WASAActivity.class);
                 startActivity(intent);
             }
         }); Dashboard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String action;
                 Intent intent = new Intent(IndexActivity.this, DashboardActivity.class);
                 startActivity(intent);
             }
         }); btnT1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String action;
                 Intent intent = new Intent(IndexActivity.this, T1Activity.class);
                 startActivity(intent);
             }
         }); btnT2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String action;
                 Intent intent = new Intent(IndexActivity.this, T2Activity.class);
                 startActivity(intent);
             }
         }); btnT3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String action;
                 Intent intent = new Intent(IndexActivity.this, T3Activity.class);
                 startActivity(intent);
             }
@@ -154,7 +145,6 @@ public class IndexActivity extends AppCompatActivity {
         btnT4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String action;
                 Intent intent = new Intent(IndexActivity.this, T4Activity.class);
                 startActivity(intent);
             }
@@ -163,7 +153,6 @@ public class IndexActivity extends AppCompatActivity {
         btnT5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String action;
                 Intent intent = new Intent(IndexActivity.this, T5Activity.class);
                 startActivity(intent);
             }
@@ -171,8 +160,23 @@ public class IndexActivity extends AppCompatActivity {
         btnReg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String action;
+
                 Intent intent = new Intent(IndexActivity.this, RegActivity.class);
+                startActivity(intent);
+            }
+        });
+        btnDashboard2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(IndexActivity.this, Dashboard2Activity.class);
+                startActivity(intent);
+            }
+        });btnDashboard3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(IndexActivity.this, Dashboard3Activity.class);
                 startActivity(intent);
             }
         });
