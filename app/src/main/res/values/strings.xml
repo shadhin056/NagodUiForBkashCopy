@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">UI_Dialog</string>
+    <string name="app_name">Smart App</string>
     <string-array name="country">
         <item>Bangladesh</item>
         <item>India</item>

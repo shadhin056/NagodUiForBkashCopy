@@ -70,7 +70,7 @@ public class Dashboard2Activity extends AppCompatActivity {
         list.add(new MenuModel("Mobile Recharge", R.drawable.n_mobile, "FTHOME"));
         list.add(new MenuModel("Bill Pay", R.drawable.n_bill, "STINS"));
         list.add(new MenuModel("Stop Cheque", R.drawable.n_stop, "STINS"));
-        list.add(new MenuModel("Cheque Statue", R.drawable.n_search2, "STINS"));
+        list.add(new MenuModel("Cheque Status", R.drawable.n_search2, "STINS"));
         list.add(new MenuModel("Ecommerce", R.drawable.n_shopping, "STINS"));
         list.add(new MenuModel("bKash", R.drawable.bkash, "STINS"));
         list.add(new MenuModel("Payoneer Payment", R.drawable.payonner, "STINS"));
