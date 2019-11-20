@@ -6,108 +6,146 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".IndexActivity">
+
     <ScrollView
-        android:layout_marginBottom="50dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp">
 
         <LinearLayout
 
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
             <Button
                 android:id="@+id/btnAlert"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Alert" />
+                android:text="Alert"
+                android:visibility="gone" />
+
             <Button
                 android:id="@+id/btnBalance"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Balance" />
+                android:text="Balance"
+                android:visibility="gone" />
+
             <Button
                 android:id="@+id/btnCOnfirmation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="COnfirmation" />
+                android:text="COnfirmation"
+                android:visibility="gone" />
+
             <Button
                 android:id="@+id/DPDC"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="DPDC" />
+                android:text="DPDC"
+                android:visibility="gone" />
+
             <Button
                 android:id="@+id/Main"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Main" />
+                android:text="Main"
+                android:visibility="gone" />
+
             <Button
                 android:id="@+id/Success"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Success" />
+                android:text="Success"
+                android:visibility="gone" />
+
             <Button
                 android:id="@+id/Success2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Success2" />
+                android:text="Success2"
+                android:visibility="gone" />
+
             <Button
                 android:id="@+id/Utility"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="UTILITY DESCO" />
+                android:text="UTILITY DESCO"
+                android:visibility="gone" />
+
             <Button
                 android:id="@+id/WASA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="WASA" />
+                android:text="WASA"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/Dashboard0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dashboard 0" />
+
             <Button
                 android:id="@+id/Dashboard"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Dashboard" />
+
             <Button
                 android:id="@+id/btnDashboard2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Dashboard 2" />
+
             <Button
                 android:id="@+id/btnDashboard3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Dashboard 3" />
+
             <Button
                 android:id="@+id/btnT1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TalentFund 1" />
- <Button
+                android:text="TalentFund 1"
+                android:visibility="gone" />
+
+            <Button
                 android:id="@+id/btnT2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TalentFund 2" />
- <Button
+                android:text="TalentFund 2"
+                android:visibility="gone" />
+
+            <Button
                 android:id="@+id/btnT3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TalentFund 3" />
- <Button
+                android:text="TalentFund 3"
+                android:visibility="gone" />
+
+            <Button
                 android:id="@+id/btnT4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TalentFund 4" />
+                android:text="TalentFund 4"
+                android:visibility="gone" />
 
             <Button
                 android:id="@+id/btnT5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TalentFund 5" />
+                android:text="TalentFund 5"
+                android:visibility="gone" />
+
             <Button
                 android:id="@+id/btnReg"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Registration" />
-
+                android:text="Registration"
+                android:visibility="gone" />
 
 
         </LinearLayout>

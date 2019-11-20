@@ -26,6 +26,7 @@ public class IndexActivity extends AppCompatActivity {
     Button btnReg;
     Button btnDashboard2;
     Button btnDashboard3;
+    Button Dashboard0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +51,7 @@ public class IndexActivity extends AppCompatActivity {
         btnReg = findViewById(R.id.btnReg);
         btnDashboard2 = findViewById(R.id.btnDashboard2);
         btnDashboard3 = findViewById(R.id.btnDashboard3);
+        Dashboard0 = findViewById(R.id.Dashboard0);
 
 
         btnAlert.setOnClickListener(new View.OnClickListener() {
@@ -177,6 +179,13 @@ public class IndexActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent intent = new Intent(IndexActivity.this, Dashboard3Activity.class);
+                startActivity(intent);
+            }
+        });Dashboard0.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(IndexActivity.this, Dashboard4Activity.class);
                 startActivity(intent);
             }
         });

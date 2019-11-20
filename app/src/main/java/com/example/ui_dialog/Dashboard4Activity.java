@@ -16,7 +16,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class DashboardActivity extends AppCompatActivity {
+public class Dashboard4Activity extends AppCompatActivity {
     com.github.loadingview.LoadingView loading_view;
     TextView checkBalance;
     private static int SPLASH_TIME_OUT = 500;
@@ -25,8 +25,7 @@ public class DashboardActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dashboard);
-        getSupportActionBar().setElevation(0);
+        setContentView(R.layout.activity_dashboard4); getSupportActionBar().setElevation(0);
 
         checkBalance=findViewById(R.id.checkBalance);
         loading_view=findViewById(R.id.loading_view);
@@ -64,18 +63,18 @@ public class DashboardActivity extends AppCompatActivity {
 
     private void menuView() {
         list.clear();
-        list.add(new MenuModel("A/C Balance", R.drawable.account_balance_icon, "ACBAL"));
-        list.add(new MenuModel("A/C Statement", R.drawable.statement_icon, "ACBAL"));
-        list.add(new MenuModel("Fund Transfer", R.drawable.fund_transfer_icon3, "ACSTMT"));
-        list.add(new MenuModel("Standing Ins", R.drawable.request_icon_icon2, "ACSTMT"));
-        list.add(new MenuModel("Mobile Recharge", R.drawable.talk_time_recharge_icon3, "FTHOME"));
-        list.add(new MenuModel("Bill Pay", R.drawable.utility_bill_icon2, "STINS"));
-        list.add(new MenuModel("Stop Cheque", R.drawable.stop_cheque_leaf_icon2, "STINS"));
-        list.add(new MenuModel("Cheque Status", R.drawable.cheak_book_status_icon2, "STINS"));
+        list.add(new MenuModel("A/C Balance", R.drawable.n_money, "ACBAL"));
+        list.add(new MenuModel("A/C Statement", R.drawable.n_accountstatement, "ACBAL"));
+        list.add(new MenuModel("Fund Transfer", R.drawable.n_transfer, "ACSTMT"));
+        list.add(new MenuModel("Standing Ins", R.drawable.n_email, "ACSTMT"));
+        list.add(new MenuModel("Mobile Recharge", R.drawable.n_mobile, "FTHOME"));
+        list.add(new MenuModel("Bill Pay", R.drawable.n_bill, "STINS"));
+        list.add(new MenuModel("Stop Cheque", R.drawable.n_stop, "STINS"));
+        list.add(new MenuModel("Cheque Status", R.drawable.n_search2, "STINS"));
         list.add(new MenuModel("Ecommerce", R.drawable.n_shopping, "STINS"));
         list.add(new MenuModel("bKash", R.drawable.bkash, "STINS"));
-        list.add(new MenuModel("Payoneer Payment", R.drawable.shadincard_icon, "STINS"));
-        list.add(new MenuModel("Credit Card", R.drawable.view_credit_card, "STINS"));
+        list.add(new MenuModel("Payoneer Payment", R.drawable.payonner, "STINS"));
+        list.add(new MenuModel("Credit Card", R.drawable.credit, "STINS"));
 
         MenuAdapter adapter = new MenuAdapter(this, list);
         gvMenu.setAdapter(adapter);
@@ -87,17 +86,17 @@ public class DashboardActivity extends AppCompatActivity {
                 TextView menu_name = (TextView) view.findViewById(R.id.menu_name);
 
                 if("ACBAL".equals(menu_soft_code.getText().toString())){
-                     Intent intent = new Intent(DashboardActivity.this, DashboardActivity.class);
+                    Intent intent = new Intent(Dashboard4Activity.this, Dashboard4Activity.class);
                     //startActivity(intent);
 
                 }else if("ACSTMT".equals(menu_soft_code.getText().toString())){
-                    Intent intent = new Intent(DashboardActivity.this, DashboardActivity.class);
+                    Intent intent = new Intent(Dashboard4Activity.this, Dashboard4Activity.class);
                     //startActivity(intent);
                 }else if("FTHOME".equals(menu_soft_code.getText().toString())){
-                    Intent intent = new Intent(DashboardActivity.this, DashboardActivity.class);
+                    Intent intent = new Intent(Dashboard4Activity.this, Dashboard4Activity.class);
                     //startActivity(intent);
                 }else if("STINS".equals(menu_soft_code.getText().toString())){
-                    Intent intent = new Intent(DashboardActivity.this, DashboardActivity.class);
+                    Intent intent = new Intent(Dashboard4Activity.this, Dashboard4Activity.class);
                     //startActivity(intent);
                 }
 
@@ -136,11 +135,11 @@ public class DashboardActivity extends AppCompatActivity {
 
             MenuModel model = getItem(position);
 
-            MenuAdapter.ViewHolder viewHolder; // view lookup cache stored in tag
+            Dashboard4Activity.MenuAdapter.ViewHolder viewHolder; // view lookup cache stored in tag
 
             if (convertView == null) {
 
-                viewHolder = new MenuAdapter.ViewHolder();
+                viewHolder = new Dashboard4Activity.MenuAdapter.ViewHolder();
 
                 LayoutInflater inflater = LayoutInflater.from(getContext());
 
@@ -155,7 +154,7 @@ public class DashboardActivity extends AppCompatActivity {
 
             } else {
 
-                viewHolder = (MenuAdapter.ViewHolder) convertView.getTag();
+                viewHolder = (Dashboard4Activity.MenuAdapter.ViewHolder) convertView.getTag();
 
             }
 
@@ -164,7 +163,7 @@ public class DashboardActivity extends AppCompatActivity {
             viewHolder.menu_icon.setImageResource(model.getImageId());
 
 
-                viewHolder.menu_name.setText(model.getMenuName());
+            viewHolder.menu_name.setText(model.getMenuName());
 
 
             viewHolder.menu_soft_code.setText(model.getSoftcode());

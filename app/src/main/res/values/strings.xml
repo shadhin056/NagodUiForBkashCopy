@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Bank Asia SMART App</string>
+    <string name="app_name">Dashboard UI</string>
     <string-array name="country">
         <item>Bangladesh</item>
         <item>India</item>
