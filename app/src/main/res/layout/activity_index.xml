@@ -106,6 +106,12 @@
                 android:text="Dashboard 3" />
 
             <Button
+                android:id="@+id/btnProgress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Progress" />
+
+            <Button
                 android:id="@+id/btnT1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

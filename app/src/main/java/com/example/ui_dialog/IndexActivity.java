@@ -27,6 +27,7 @@ public class IndexActivity extends AppCompatActivity {
     Button btnDashboard2;
     Button btnDashboard3;
     Button Dashboard0;
+    Button btnProgress;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +36,7 @@ public class IndexActivity extends AppCompatActivity {
         btnAlert = findViewById(R.id.btnAlert);
         btnBalance = findViewById(R.id.btnBalance);
         btnCOnfirmation = findViewById(R.id.btnCOnfirmation);
+        btnProgress = findViewById(R.id.btnProgress);
 
         DPDC = findViewById(R.id.DPDC);
         Main = findViewById(R.id.Main);
@@ -54,7 +56,13 @@ public class IndexActivity extends AppCompatActivity {
         Dashboard0 = findViewById(R.id.Dashboard0);
 
 
-        btnAlert.setOnClickListener(new View.OnClickListener() {
+        btnProgress.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(IndexActivity.this, ProgressBarActivity.class);
+                startActivity(intent);
+            }
+        });btnAlert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(IndexActivity.this, Alert.class);
