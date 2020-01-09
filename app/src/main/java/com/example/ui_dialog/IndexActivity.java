@@ -28,6 +28,7 @@ public class IndexActivity extends AppCompatActivity {
     Button btnDashboard3;
     Button Dashboard0;
     Button btnProgress;
+    Button btnProgress1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +38,7 @@ public class IndexActivity extends AppCompatActivity {
         btnBalance = findViewById(R.id.btnBalance);
         btnCOnfirmation = findViewById(R.id.btnCOnfirmation);
         btnProgress = findViewById(R.id.btnProgress);
+        btnProgress1 = findViewById(R.id.btnProgress1);
 
         DPDC = findViewById(R.id.DPDC);
         Main = findViewById(R.id.Main);
@@ -194,6 +196,13 @@ public class IndexActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent intent = new Intent(IndexActivity.this, Dashboard4Activity.class);
+                startActivity(intent);
+            }
+        });btnProgress1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(IndexActivity.this, Processbar2Activity.class);
                 startActivity(intent);
             }
         });
