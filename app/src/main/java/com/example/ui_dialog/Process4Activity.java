@@ -1,27 +1,25 @@
 package com.example.ui_dialog;
 
-import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class Processbar2Activity extends AppCompatActivity {
-   private TextView txtProgress;
+public class Process4Activity extends AppCompatActivity {
+    private TextView txtProgress;
     RelativeLayout btn;
-    ProgressBar pB;
+    com.github.lzyzsd.circleprogress.CircleProgress pB;
     int mProgressStatus=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_processbar2);
+        setContentView(R.layout.activity_process4);
         txtProgress = (TextView) findViewById(R.id.txtProgress);
-        pB = (ProgressBar) findViewById(R.id.pB);
+        pB =  findViewById(R.id.pB);
         btn =   findViewById(R.id.btn);
 
 
@@ -39,27 +37,27 @@ public class Processbar2Activity extends AppCompatActivity {
             }
         });
     }
-
     private Runnable rotationRunnable = new Runnable() {
         @Override
         public void run() {
 
             if (btn.isPressed()) {
+                if (btn.isPressed()) {
 
-                if( mProgressStatus!=100){
-                    txtProgress.setText(mProgressStatus + " %");
-                    pB.setProgress(mProgressStatus);
-                    mProgressStatus++;
-                }else if(mProgressStatus==100){
-                    pB.setProgress(mProgressStatus);
-                    Toast.makeText(Processbar2Activity.this,"Congratulation",Toast.LENGTH_SHORT).show();
-                    txtProgress.setText(mProgressStatus + " %");
-                }else {
-                    pB.setProgress(mProgressStatus);
+                    if( mProgressStatus!=100){
+                        txtProgress.setText(mProgressStatus + " %");
+                        pB.setProgress(mProgressStatus);
+                        mProgressStatus++;
+                    }else if(mProgressStatus==100){
+                        pB.setProgress(mProgressStatus);
+                        Toast.makeText(Process4Activity.this,"Congratulation",Toast.LENGTH_SHORT).show();
+                        txtProgress.setText(mProgressStatus + " %");
+                    }else {
+                        pB.setProgress(mProgressStatus);
+                    }
+                    btn.postDelayed(rotationRunnable, 10);
                 }
-                btn.postDelayed(rotationRunnable, 10);
             }
         }
     };
-    }
-
+}

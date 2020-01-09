@@ -118,6 +118,24 @@
                 android:text="Progress1" />
 
             <Button
+                android:id="@+id/btnProgress2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Progres2" />
+
+            <Button
+                android:id="@+id/btnProgress3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Progres3" />
+
+            <Button
+                android:id="@+id/btnProgress4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Progres4" />
+
+            <Button
                 android:id="@+id/btnT1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

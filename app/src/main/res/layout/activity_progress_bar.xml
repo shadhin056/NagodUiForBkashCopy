@@ -10,18 +10,33 @@
     android:orientation="vertical">
 
 
-    <ProgressBar
-        android:layout_margin="20dp"
-        android:id="@+id/pB"
-        style="@android:style/Widget.ProgressBar.Horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:max="100"
-        android:paddingRight="10dp" />
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:layout_margin="20dp"
+            android:id="@+id/pB"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:max="100"
+            android:paddingRight="10dp" />
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/pB"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:textColor="@color/white" />
+    </RelativeLayout>
     <Button
         android:id="@+id/btn"
+        android:text="Tab and Hold"
         android:layout_margin="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">

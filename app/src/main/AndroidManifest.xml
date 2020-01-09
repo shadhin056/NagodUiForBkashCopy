@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Processbar2Activity"></activity>
+        <activity android:name=".Progress5Activity"></activity>
+        <activity android:name=".Process4Activity" />
+        <activity android:name=".Progress3Activity" />
+        <activity android:name=".Processbar2Activity" />
         <activity android:name=".ProgressBarActivity" />
         <activity android:name=".Dashboard4Activity" />
         <activity android:name=".Dashboard3Activity" />

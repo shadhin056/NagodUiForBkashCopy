@@ -29,6 +29,9 @@ public class IndexActivity extends AppCompatActivity {
     Button Dashboard0;
     Button btnProgress;
     Button btnProgress1;
+    Button btnProgress2;
+    Button btnProgress3;
+    Button btnProgress4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +42,9 @@ public class IndexActivity extends AppCompatActivity {
         btnCOnfirmation = findViewById(R.id.btnCOnfirmation);
         btnProgress = findViewById(R.id.btnProgress);
         btnProgress1 = findViewById(R.id.btnProgress1);
+        btnProgress2 = findViewById(R.id.btnProgress2);
+        btnProgress3 = findViewById(R.id.btnProgress3);
+        btnProgress4 = findViewById(R.id.btnProgress4);
 
         DPDC = findViewById(R.id.DPDC);
         Main = findViewById(R.id.Main);
@@ -58,7 +64,25 @@ public class IndexActivity extends AppCompatActivity {
         Dashboard0 = findViewById(R.id.Dashboard0);
 
 
-        btnProgress.setOnClickListener(new View.OnClickListener() {
+        btnProgress4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(IndexActivity.this, Progress5Activity.class);
+                startActivity(intent);
+            }
+        }); btnProgress3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(IndexActivity.this, Process4Activity.class);
+                startActivity(intent);
+            }
+        }); btnProgress2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(IndexActivity.this, Progress3Activity.class);
+                startActivity(intent);
+            }
+        }); btnProgress.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(IndexActivity.this, ProgressBarActivity.class);

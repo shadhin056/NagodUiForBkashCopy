@@ -1,32 +1,28 @@
 package com.example.ui_dialog;
 
-import android.annotation.SuppressLint;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.Timer;
-import java.util.TimerTask;
-
-public class ProgressBarActivity extends AppCompatActivity {
-
-    Button btn;
+public class Progress3Activity extends AppCompatActivity {
+    private TextView txtProgress;
+    RelativeLayout btn;
     ProgressBar pB;
     int mProgressStatus=0;
-    TextView textview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_progress_bar);
-        btn = findViewById(R.id.btn);
-        pB = findViewById(R.id.pB);
-        textview = findViewById(R.id.textview);
+        setContentView(R.layout.activity_progress3);
+        txtProgress = (TextView) findViewById(R.id.txtProgress);
+        pB = (ProgressBar) findViewById(R.id.pB);
+        btn =   findViewById(R.id.btn);
 
 
         btn.setOnTouchListener(new View.OnTouchListener() {
@@ -36,7 +32,7 @@ public class ProgressBarActivity extends AppCompatActivity {
                     v.post(rotationRunnable);
                 } else if (event.getAction() == MotionEvent.ACTION_UP) {
                     mProgressStatus=0;
-                    textview.setText(mProgressStatus + " %");
+                    txtProgress.setText(mProgressStatus + " %");
                     pB.setProgress(mProgressStatus);
                 }
                 return false;
@@ -49,21 +45,22 @@ public class ProgressBarActivity extends AppCompatActivity {
         public void run() {
 
             if (btn.isPressed()) {
+                if (btn.isPressed()) {
 
-                if( mProgressStatus!=100){
-                    textview.setText(mProgressStatus + " %");
-                    pB.setProgress(mProgressStatus);
-                    mProgressStatus++;
-                }else if(mProgressStatus==100){
-                    pB.setProgress(mProgressStatus);
-                    Toast.makeText(ProgressBarActivity.this,"Congratulation",Toast.LENGTH_SHORT).show();
-                    textview.setText(mProgressStatus + " %");
-                }else {
-                    pB.setProgress(mProgressStatus);
+                    if( mProgressStatus!=100){
+                        txtProgress.setText(mProgressStatus + " %");
+                        pB.setProgress(mProgressStatus);
+                        mProgressStatus++;
+                    }else if(mProgressStatus==100){
+                        pB.setProgress(mProgressStatus);
+                        Toast.makeText(Progress3Activity.this,"Congratulation",Toast.LENGTH_SHORT).show();
+                        txtProgress.setText(mProgressStatus + " %");
+                    }else {
+                        pB.setProgress(mProgressStatus);
+                    }
+                    btn.postDelayed(rotationRunnable, 10);
                 }
-                btn.postDelayed(rotationRunnable, 10);
             }
         }
     };
-
 }
