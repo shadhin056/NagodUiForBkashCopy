@@ -23,63 +23,63 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Alert"
-                android:visibility="gone" />
+                 />
 
             <Button
                 android:id="@+id/btnBalance"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Balance"
-                android:visibility="gone" />
+                 />
 
             <Button
                 android:id="@+id/btnCOnfirmation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="COnfirmation"
-                android:visibility="gone" />
+                 />
 
             <Button
                 android:id="@+id/DPDC"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="DPDC"
-                android:visibility="gone" />
+                 />
 
             <Button
                 android:id="@+id/Main"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Main"
-                android:visibility="gone" />
+                 />
 
             <Button
                 android:id="@+id/Success"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Success"
-                android:visibility="gone" />
+                 />
 
             <Button
                 android:id="@+id/Success2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Success2"
-                android:visibility="gone" />
+                 />
 
             <Button
                 android:id="@+id/Utility"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="UTILITY DESCO"
-                android:visibility="gone" />
+                 />
 
             <Button
                 android:id="@+id/WASA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="WASA"
-                android:visibility="gone" />
+                 />
 
             <Button
                 android:id="@+id/Dashboard0"
@@ -140,42 +140,42 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="TalentFund 1"
-                android:visibility="gone" />
+                 />
 
             <Button
                 android:id="@+id/btnT2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="TalentFund 2"
-                android:visibility="gone" />
+                 />
 
             <Button
                 android:id="@+id/btnT3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="TalentFund 3"
-                android:visibility="gone" />
+                 />
 
             <Button
                 android:id="@+id/btnT4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="TalentFund 4"
-                android:visibility="gone" />
+                 />
 
             <Button
                 android:id="@+id/btnT5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="TalentFund 5"
-                android:visibility="gone" />
+                 />
 
             <Button
                 android:id="@+id/btnReg"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Registration"
-                android:visibility="gone" />
+                 />
 
 
         </LinearLayout>
