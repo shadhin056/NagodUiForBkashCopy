@@ -12,6 +12,8 @@
 
 
     <RelativeLayout
+        android:clickable="true"
+        android:id="@+id/btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -19,24 +21,25 @@
             android:layout_margin="20dp"
             android:id="@+id/pB"
             style="@android:style/Widget.ProgressBar.Horizontal"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="500dp"
+            android:layout_height="50dp"
             android:layout_alignParentTop="true"
             android:max="100"
             android:paddingRight="10dp" />
 
         <TextView
+            android:text="Tab and Hold for Submit"
             android:id="@+id/textview"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="500dp"
+            android:layout_height="50dp"
             android:layout_alignBottom="@id/pB"
             android:background="@android:color/transparent"
             android:gravity="center"
             android:textColor="@color/white" />
     </RelativeLayout>
     <Button
-        android:id="@+id/btn"
-        android:text="Tab and Hold"
+
+
         android:layout_margin="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">

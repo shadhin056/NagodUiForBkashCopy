@@ -7,6 +7,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -15,7 +16,7 @@ import java.util.TimerTask;
 
 public class ProgressBarActivity extends AppCompatActivity {
 
-    Button btn;
+    RelativeLayout btn;
     ProgressBar pB;
     int mProgressStatus=0;
     TextView textview;
@@ -53,7 +54,7 @@ public class ProgressBarActivity extends AppCompatActivity {
                 if( mProgressStatus!=100){
                     textview.setText(mProgressStatus + " %");
                     pB.setProgress(mProgressStatus);
-                    mProgressStatus++;
+                    mProgressStatus=mProgressStatus+2;
                 }else if(mProgressStatus==100){
                     pB.setProgress(mProgressStatus);
                     Toast.makeText(ProgressBarActivity.this,"Congratulation",Toast.LENGTH_SHORT).show();
